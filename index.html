@@ -16,34 +16,36 @@
         <input type="text" id="screen" class="display" placeholder="0" />
       </div>
       <div class="row">
-        <button class="operator" onclick="clearSum()">AC</button>
+        <!-- <button class="operator" onclick="input('')">C</button>
+        <button class="operator" onclick="input()">C</button> -->
         <button class="operator" onclick="clearSum()">C</button>
-        <button class="operator" onclick="input('/')">/</button>
-        <button class="operator" onclick="input('*')">*</button>
+        <button class="operator" onclick="clearSum()">AC</button>
+        <button class="operator" onclick="input('-')">-</button>
       </div>
-      <div class="row">
 
+      <div class="row">
         <button class="num" onclick="input('9')">9</button>
         <button class="num" onclick="input('8')">8 </button>
         <button class="num" onclick="input('7')">7</button>
-        <button class="operator" onclick="input('-')">-</button>
+        <button class="operator" onclick="input('/')">/</button>
       </div>
-      
       <div class="row">
-        
+  
         <button class="num" onclick="input('6')">6</button>
         <button class="num" onclick="input('5')">5</button>
         <button class="num" onclick="input('4')">4</button>
-        <button class="operator" onclick="input('+')">+</button>
+        <button class="operator" onclick="input('*')">*</button>
       </div>
       <div class="row">
-
+        
         <button class="num" onclick="input('3')">3</button>
         <button class="num" onclick="input('2')">2</button>
         <button class="num" onclick="input('1')">1</button>
-        <button class="num" onclick="input('0')">0</button>
+        <button class="operator" onclick="input('+')">+</button>
       </div>
       <div class="row">
+        <button class="num" onclick="input('0')">0</button>
+        <button class="operator" onclick="input('.')">.</button>
         <button class="operator" onclick="evaluateSum()">=</button>
       </div>
 

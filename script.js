@@ -1,4 +1,4 @@
-/*Intializing a variable called display which takes in from the html imput with the class of screen */
+/*Intializing a variable called display which takes in from the html input with the class of screen */
 
 let display = document.getElementById('screen'); 
 
@@ -7,8 +7,8 @@ let display = document.getElementById('screen');
 
  }
 
-  function input(number){
-      display.value += number
+  function input(i){
+      display.value += i
 
  } 
 

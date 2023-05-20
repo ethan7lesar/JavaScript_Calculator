@@ -1,4 +1,4 @@
-.calculator{
+/* .calculator{
  display: flex;
  flex-direction: column;
  width: 350px;
@@ -18,5 +18,164 @@
 
 button{
     width: 100px;
-}
+} */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    font-family: 'Exo 2', sans-serif;
+  }
+  
+  
+  .calculator {
+    margin-top: 150px;
+    width: 300px;
+    padding-bottom: 15px;
+    border-radius: 7px; 
+    background-color: black;
+     box-shadow: 5px 8px 8px -2px rgba(0, 0, 0, 0.61);  
+    -webkit-animation: rotate-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: rotate-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+  }
+
+  /* .calculator:hover{
+
+    -webkit-animation: shadow-pop-br 0.4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-br 0.4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  } */
+
+  .display {
+    width: 100%;
+    height: 80px;
+    border: none;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 35px;
+    background-color: red;
+    color: black;
+    text-align: right;
+   border-radius: 7px; 
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+  button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 35px;
+    background-color: #222;
+    color: red;
+    margin: 10px;
+  }
+  .operator {
+    background-color: red;
+    color: black;
+  }
+
+  .operator:hover{
+
+    background-color: black;
+    color: red; 
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+
+  .num:hover{
+    background-color: black;
+    color: red;
+  }
+  
+  
+  @-webkit-keyframes rotate-in-center {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes rotate-in-center {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      opacity: 1;
+    }
+  } 
+  
+
+/* @-webkit-keyframes shadow-pop-br {
+    0% {
+      -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+              box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+      -webkit-transform: translateX(-8px) translateY(-8px);
+              transform: translateX(-8px) translateY(-8px);
+    }
+  }
+  @keyframes shadow-pop-br {
+    0% {
+      -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+              box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+      -webkit-transform: translateX(-8px) translateY(-8px);
+              transform: translateX(-8px) translateY(-8px);
+    }
+  }  */
+  @media  screen and (max-width:700px) {
+    .calculator{
+       
+        margin-top: 70px;
+    }
+
+
+
+   }
+
+   @media  screen and (max-width:350px) {
+    .calculator{
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+    }
+
+
+
+   }
+
 
