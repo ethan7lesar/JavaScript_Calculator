@@ -92,10 +92,7 @@ button{
     background-color: black;
     color: red; 
   }
-  
-  button:hover {
-    cursor: pointer;
-  }
+
 
   .num:hover{
     background-color: black;
